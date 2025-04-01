@@ -32,6 +32,16 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    fill: white;
 }
 
 .menu {
@@ -41,12 +51,41 @@ body {
     grid-template-rows: repeat(9, 48px);
     gap: 10px;
     padding: 25px;
+    align-items: center;
 }
 
 .top-links {
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
     font-weight: bold;
+}
+
+.menu-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    fill: white;
+}
+
+.menu-btn {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0 0 10px white;
     color: white;
+}
+
+.menu-btn:hover {
+    background-color: white;
+    color: #2280fca8;
+    transition: 0.3s;
+}
+
+.menu-btn:hover .menu-icon{
+    transition: 0.3s;
+    fill: #2280fca8;
 }
 
 .container-content {
