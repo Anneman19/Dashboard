@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html ,
@@ -20,6 +21,32 @@ body {
 .sidebar {
     grid-column: 1 / 2;
     background-color: #2280fca8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.logo {
+    grid-row: 1 / 2;
+    padding: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 48px);
+    gap: 10px;
+    padding: 25px;
+}
+
+.top-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
 .container-content {
